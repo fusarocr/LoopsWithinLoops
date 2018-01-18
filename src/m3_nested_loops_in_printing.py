@@ -157,7 +157,7 @@ def decreasing_exclamation_marks(m, n):
     Precondition:  m and n are positive integers with m >= n.
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # IMPLEMENTATION RESTRICTION:
@@ -165,8 +165,12 @@ def decreasing_exclamation_marks(m, n):
     #   in this or the other problems in this module, as doing so
     #   would defeat the goal of providing practice at loops within loops.
     # ------------------------------------------------------------------
+    for j in range(m-n+1):
+        for k in range(m-j):
+            print('!', end='')
+        print()
 
-
+        
 def run_test_alternating_brackets():
     """ Tests the    alternating_brackets    function. """
     print()
